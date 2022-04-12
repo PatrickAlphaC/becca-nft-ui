@@ -1,9 +1,6 @@
-import type { NextPage } from "next"
-import { Card, Tooltip, Icon, Illustration } from "web3uikit"
-import addresses from "../constants/addresses.json"
+import { Card, Tooltip, Illustration } from "web3uikit"
 
-import {useWeb3Contract,useMoralisWeb3Api, useMoralis} from "react-moralis"
-import Image from "next/image"
+import {useWeb3Contract} from "react-moralis"
 import { useState, useEffect } from "react"
 import nftAbi from "../constants/BasicNft.json"
 
@@ -50,8 +47,7 @@ export default function BeccaNFT() {
                     <div className="p-2">
                         {imageURI ? (
                             <div className="flex flex-col items-end gap-2">
-                                <Image
-                                    loader={() => imageURI}
+                                <img
                                     src={imageURI}
                                     height="500"
                                     width="500"
