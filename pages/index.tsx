@@ -44,9 +44,17 @@ const Home: NextPage = () => {
                     )}
                 </div>
             ) : (
-                <div className="p-5 flex flex-row justify-between items-center font-montserrat">
-                    Please Install and Connect to Wallet
+                <div >
+                <div className="flex justify-center">
+                <div className="p-5 flex flex-row items-center font-montserrat text-3xl">
+                    Please Install and Connect to Wallet - or press this button. 
                 </div>
+                </div>
+                <div className="flex justify-center">
+                <a href="https://opensea.io/collection/bex-toaster-nft"><Button variant="contained" size="large">Go to Opensea</Button></a>
+                </div>
+                </div>
+                
             )}
         </div>
     )
